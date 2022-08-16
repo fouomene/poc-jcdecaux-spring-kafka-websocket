@@ -18,9 +18,9 @@ In spring configuration file **application.properties** of module *producer-stat
 
 Download https://kafka.apache.org the latest Kafka release and extract it:
 
-    $tar -xzf kafka_2.13-3.2.0.tgz
+    $ tar -xzf kafka_2.13-3.2.0.tgz
 
-    $cd kafka_2.13-3.2.0
+    $ cd kafka_2.13-3.2.0
 
 
 # Step 3 : Start the Kafka environment
@@ -33,42 +33,46 @@ Run the following commands in order to start all services in the correct order:
 
 -Note: Soon, ZooKeeper will no longer be required by Apache Kafka.
 
-    $bin/zookeeper-server-start.sh config/zookeeper.properties
+    $ bin/zookeeper-server-start.sh config/zookeeper.properties
 
 or window
 
-    $.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+    $ .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
 Open another terminal session and run:
 
 - **Start the Kafka broker service**
 
 
-    $bin/kafka-server-start.sh config/server.properties
+    $ bin/kafka-server-start.sh config/server.properties
 
 or window
 
-    $.\bin\windows\kafka-server-start.bat .\config\server.properties
+    $ .\bin\windows\kafka-server-start.bat .\config\server.properties
 
 Once all services have successfully launched, you will have a basic Kafka environment running and ready to use. 
 
 # Step 4 : Compile, Test & Package project 
-    $mvn clean install
+
+    $ mvn clean install
+    
 To built .jar file into your local Maven repository
 
 # Step 5 : Run Spring Boot app(s) Producer and Consumer JCDecaux
  - **Producer Station JCDecaux**
 
-
-    $cd producer-station
-    $mvn spring-boot:run
-
+```
+    $ cd producer-station
+    
+    $ mvn spring-boot:run
+```
 - **Consumer Station JCDecaux**
 
-
-    $cd consurmer-station
-    $mvn spring-boot:run
-
+```
+    $ cd consurmer-station
+      
+    $ mvn spring-boot:run
+```
 Websocket Dashboard JCDecaux Producer
 ![alt text](https://fouomene.com/producerdashboard.jpg) 
 
