@@ -9,7 +9,7 @@ Architecture
 To start, you will need to retrieve an API key by creating an account at https://developer.jcdecaux.com/#/signup. Once you have created your account, you will have an API key displayed in your user account. If your API key is "XXX", you can verify that it is working correctly by retrieving the list of all stations using the following command:
 $ curl https://api.jcdecaux.com/vls/v1/stations?apiKey=XXX
 
-In spring configuration file application.properties of the JcdecauxProducerKafka project, put your apiKey 
+In spring configuration file **application.properties** of module *producer-station* project, put your apiKey 
 
     jcdecaux.api.key= your apiKey
 
