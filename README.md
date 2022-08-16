@@ -53,7 +53,7 @@ or window
 Once all services have successfully launched, you will have a basic Kafka environment running and ready to use. 
 
 # Step 4 : Compile, Test & Package project 
-    $mvn clean intall
+    $mvn clean install
 To built .jar file into your local Maven repository
 
 # Step 5 : Run Spring Boot app(s) Producer and Consumer JCDecaux
