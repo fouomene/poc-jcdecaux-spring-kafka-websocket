@@ -1,6 +1,8 @@
 # poc-jcdecaux-spring-kafka-websocket
 We will use this JCDecaux API https://developer.jcdecaux.com to observe rentals at each bike station in real time...
 
+https://www.slideshare.net/fouomene/migration-dune-architecture-microservice-vers-une-architecture-eventdriven-microservice-avec-kafka
+
 Architecture 
 ![alt text](https://fouomene.com/architecture-event-driven.jpg) 
 
